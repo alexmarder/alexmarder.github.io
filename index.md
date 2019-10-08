@@ -3,8 +3,9 @@ title: Alex Marder's Website
 ---
 
 Welcome to my github website.
-I'm a PhD candidate at the University of Pennsylvania focusing on Internet measurements, and specifically creating topological maps of the Internet.
-I can be reached at amarderATseasDOTupennDOTedu.
+I'm currently a postdoc at CAIDA/UCSD focusing on Internet measurements, and anything related to uncovering the topology of the Internet.
+I received my PhD at the University of Pennsylvania in 2019.
+I can be reached at amarderATcaida.org.
 
 # Research
 ## bdrmapIT
