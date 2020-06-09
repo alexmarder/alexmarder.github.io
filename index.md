@@ -28,6 +28,21 @@ We also show that APPLE complements existing alias resolution techniques, increa
 [PAM 2020 Presentation](https://www.youtube.com/watch?v=GU_MJQGYXFQ)<br />
 [Github Repository](https://github.com/alexmarder/apple)
 
+## vrfinder
+Finds outbound addresses (usually caused by L3VPNs) in traceroute paths.
+
+### Abstract
+Current methods to analyze the Internet’s router-level topology with paths collected using traceroute assume that the source address for each router in the path is either an inbound or off-path address on each router.
+In this work, we show that outbound addresses are common in our Internet-wide traceroute dataset collected by CAIDA’s Ark vantage points in January 2020, accounting for 1.7% – 5.8% of the addresses seen at some point before the end of a traceroute.
+This phenomenon can lead to mistakes in Internet topology analysis, such as inferring router ownership and identifying interdomain links.
+We hypothesize that the primary contributor to outbound addresses is Layer 3 Virtual Private Networks (L3VPNs), and propose vrfinder, a technique for identifying L3VPN outbound addresses in traceroute collections.
+We validate vrfinder against ground truth from two large research and education networks, demonstrating high precision (100.0%) and recall (82.1% – 95.3%).
+We also show the benefit of accounting for L3VPNs in traceroute analysis through extensions to bdrmapIT, increasing the accuracy of its router ownership inferences for L3VPN outbound addresses from 61.5% – 79.4% to 88.9% – 95.5%.
+
+### Resources
+[SIGMETRICS 2020 Paper](data/vrfinder/vrfinder.pdf)<br />
+[SIGMETRICS 2020 Presentation](https://www.youtube.com/watch?v=P9jrEz2trJs)
+
 ## bdrmapIT
 <tt>bdrmapIT</tt> creates accurate maps of the Internet's graph.
 It uses traceroutes from any number of vantage points and identifies the AS operator for every router interface address seen in the tracroute dataset.
