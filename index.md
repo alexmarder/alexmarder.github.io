@@ -8,6 +8,26 @@ I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
 # Research
+## Alias Pruning by Path Length Estimation (APPLE)
+APPLE is a new alias resolution technique that uses pings from many vantage points to group together addresses the belong to the same routers.
+This is not the expected final product, but a proof of concept that the technique has merit.
+
+### Abstract
+Uncovering the Internet’s router graph is vital to accurate measurement and analysis.
+In this paper, we present a new technique for resolving router IP aliases that complements existing techniques.
+Our approach, Alias Pruning by Path Length Estimation (APPLE), avoids relying on router manufacturer and operating system specific implementations of IP.
+Instead, it filters potential router aliases seen in traceroute by comparing the reply path length from each address to a distributed set of vantage points.
+
+We evaluated our approach on Internet-wide collections of IPv4 and IPv6traceroutes.
+We compared APPLE’s router alias inferences against router configurations from two R&E networks, finding no false positives.
+Moreover, APPLE’s coverage of the potential alias pairs in the ground truth networks rivals the current state-of-the-art in IPv4, and far exceeds existing techniques in IPv6.
+We also show that APPLE complements existing alias resolution techniques, increasing the total number of inferred alias pairs by 109.6% in IPv4, and by 1071.5% in IPv6.
+
+### Resources
+[PAM 2020 Paper](data/apple/apple.pdf)<br />
+[PAM 2020 Presentation](https://www.youtube.com/watch?v=GU_MJQGYXFQ)<br />
+[Github Repository](https://github.com/alexmarder/apple)
+
 ## bdrmapIT
 <tt>bdrmapIT</tt> creates accurate maps of the Internet's graph.
 It uses traceroutes from any number of vantage points and identifies the AS operator for every router interface address seen in the tracroute dataset.
