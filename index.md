@@ -16,7 +16,7 @@ We used bdrmapIT's inferences as input to a machine learning algorithm to extrac
 This can provide much greater breadth to router operator validation.
 
 <details>
-<summary><h2>More info.</h2></summary>
+<h2><summary>More info.</summary></h2>
 
 ### Abstract
 We present the design, implementation, evaluation, and validation of a system that learns regular expressions (regexes) to extract Autonomous System Numbers (ASNs) from hostnames associated with router interfaces.
