@@ -15,6 +15,9 @@ One major problem with inferring router operators is the lack of validation info
 We used bdrmapIT's inferences as input to a machine learning algorithm to extract AS operator information from DNS hostnames.
 This can provide much greater breadth to router operator validation.
 
+<details>
+<summary>More info.</summary>
+
 ### Abstract
 We present the design, implementation, evaluation, and validation of a system that learns regular expressions (regexes) to extract Autonomous System Numbers (ASNs) from hostnames associated with router interfaces.
 We train our system with ASNs inferred by RouterToAsAssignment and bdrmapIT using topological constraints from traceroute paths, as well as ASNs recorded by operators in PeeringDB, to learn regexes for 206 different suffixes.
@@ -27,6 +30,7 @@ This work presents a new avenue for collecting validation data, opening a broade
 [Paper website](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/) <br />
 [IMC 2020 Paper](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/learning_extract_use_asns.pdf) <br />
 [IMC 2020 Presentation](https://www.youtube.com/watch?v=SuUoSxsjp9s) <br />
+</details>
 
 ## Alias Pruning by Path Length Estimation (APPLE)
 Authors: **Alexander Marder**
