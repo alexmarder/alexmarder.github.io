@@ -18,7 +18,6 @@ This can provide much greater breadth to router operator validation.
 <details>
 <summary><b>Abstract</b></summary>
 
-### Abstract
 We present the design, implementation, evaluation, and validation of a system that learns regular expressions (regexes) to extract Autonomous System Numbers (ASNs) from hostnames associated with router interfaces.
 We train our system with ASNs inferred by RouterToAsAssignment and bdrmapIT using topological constraints from traceroute paths, as well as ASNs recorded by operators in PeeringDB, to learn regexes for 206 different suffixes.
 Because these methods for inferring router ownership can infer the wrong ASN, we modify bdrmapIT to integrate this new capability to extract ASNs from hostnames.
@@ -30,7 +29,6 @@ This work presents a new avenue for collecting validation data, opening a broade
 <details>
 <summary><b>Resources</b></summary>
 
-### Resources
 [Paper website](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/) <br />
 [IMC 2020 Paper](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/learning_extract_use_asns.pdf) <br />
 [IMC 2020 Presentation](https://www.youtube.com/watch?v=SuUoSxsjp9s) <br />
@@ -42,7 +40,8 @@ Authors: **Alexander Marder**
 APPLE is a new alias resolution technique that uses pings from many vantage points to group together addresses they belong to the same routers.
 This is not the expected final product, but a proof of concept that the technique has merit.
 
-### Abstract
+<details>
+<summary><b>Abstract</b></summary>
 Uncovering the Internet’s router graph is vital to accurate measurement and analysis.
 In this paper, we present a new technique for resolving router IP aliases that complements existing techniques.
 Our approach, Alias Pruning by Path Length Estimation (APPLE), avoids relying on router manufacturer and operating system specific implementations of IP.
@@ -52,11 +51,15 @@ We evaluated our approach on Internet-wide collections of IPv4 and IPv6 tracerou
 We compared APPLE’s router alias inferences against router configurations from two R&E networks, finding no false positives.
 Moreover, APPLE’s coverage of the potential alias pairs in the ground truth networks rivals the current state-of-the-art in IPv4, and far exceeds existing techniques in IPv6.
 We also show that APPLE complements existing alias resolution techniques, increasing the total number of inferred alias pairs by 109.6% in IPv4, and by 1071.5% in IPv6.
+</details>
 
-### Resources
+<details>
+<summary><b>Resources</b></summary>
+
 [PAM 2020 Paper](data/apple/apple.pdf) <br />
 [PAM 2020 Presentation](https://www.youtube.com/watch?v=GU_MJQGYXFQ) <br />
 [Github Repository](https://github.com/alexmarder/apple)
+</details>
 
 ## vrfinder
 Authors: **Alexander Marder**, Matthew Luckie, Bradley Huffaker, kc claffy
