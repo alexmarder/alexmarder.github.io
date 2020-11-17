@@ -25,7 +25,9 @@ Because these methods for inferring router ownership can infer the wrong ASN, we
 Evaluating against ground truth, our modification correctly distinguished stale from correct hostnames for 92.5% of hostnames with an ASN different from bdrmapIT’s initial inference.
 This modification allowed bdrmapIT to increase the agreement between extracted and inferred ASNs for these routers in the January 2020 ITDK from 87.4% to 97.1% and reduce the error rate from 1/7.9 to 1/34.5.
 This work presents a new avenue for collecting validation data, opening a broader horizon of opportunity for evidence-based router ownership inference.
+</details>
 
+<details>
 <summary><b>Resources</b></summary>
 
 ### Resources
