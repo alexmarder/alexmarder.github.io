@@ -3,11 +3,37 @@ title: Alex Marder's Website
 ---
 
 Welcome to my github website.
-I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, and anything related to uncovering and interpreting the topology of the Internet.
+I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, cloud networks, and anything related to uncovering and interpreting the topology of the Internet.
 I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
+- [Research](#research)
+- [Other Recorded Presentation](#other-recorded-presentations)
+
 # Research
+## Inferring Cloud Interconnections: Validation, Geolocation, and Routing Behavior [PAM 2021]
+**Alexander Marder**, kc claffy, Alex C. Snoeren
+
+Early work trying to interpret traceroutes from large public cloud providers with global WANs.
+Intended to start a larger research effort, we improved bdrmapIT's accuracy for traceroute paths from clouds, analyzed differences across geographic regions, and geolocated interconnections between cloud providers.
+
+<details>
+<summary><b>Abstract</b></summary>
+
+Public clouds fundamentally changed the Internet landscape, centralizing traffic generation in a handful of networks.
+Internet performance, robustness, and public policy analyses struggle to properly reflect this centralization, largely because public collections of BGP and traceroute reveal a small portion of cloud connectivity.
+
+This paper evaluates and improves our ability to infer cloud connectivity, bootstrapping future measurements and analyses that more accurately reflect the cloud-centric Internet.
+We also provide a technique for identifying the interconnections that clouds use to reach destinations around the world, allowing edge networks and enterprises to understand how clouds reach them via their public WAN.
+Finally, we present two techniques for geolocating the interconnections between cloud networks at the city level that can inform assessments of their resilience to link failures and help enterprises build multi-cloud applications and services.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+Coming soon.
+</details>
+
 ## Learning to Extract and Use ASNs in Hostnames [IMC 2020]
 Authors: Matthew Luckie, **Alexander Marder**, Marianne Fletcher, Bradley Huffaker, kc claffy
 
@@ -140,3 +166,7 @@ These results suggest that MAP-IT is sufficiently reliable for network diagnosti
 [IMC 2018 Slides](data/mapit/mapit_imc_slides.pdf)<br />
 [Github Repository](https://github.com/alexmarder/MAP-IT)
 </details>
+
+# Other Recorded Presentations
+EuroIX presentation of preliminary research in to how public clouds (Amazon AWS, Microsoft Azure, and Google Cloud) use IXPs.
+YouTube Link: [https://www.youtube.com/watch?v=_KMiLnjFrSQ](https://www.youtube.com/watch?v=_KMiLnjFrSQ)
