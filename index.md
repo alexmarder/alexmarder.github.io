@@ -169,5 +169,9 @@ These results suggest that MAP-IT is sufficiently reliable for network diagnosti
 
 # Other Recorded Presentations
 EuroIX presentation of preliminary research in to how public clouds (Amazon AWS, Microsoft Azure, and Google Cloud) use IXPs.
-YouTube Link: [https://www.youtube.com/watch?v=_KMiLnjFrSQ](https://www.youtube.com/watch?v=_KMiLnjFrSQ)
+<details>
+<summary><b>Resources</b></summary>
+
+YouTube Link: [https://www.youtube.com/watch?v=_KMiLnjFrSQ](https://www.youtube.com/watch?v=_KMiLnjFrSQ)<br />
 Video Download: [How Do Clouds Use IXPs?](data/euroix/how_do_clouds_use_ixps.mkv)
+</details>
