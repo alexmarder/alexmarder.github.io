@@ -2,8 +2,8 @@
 title: Alex Marder's Website
 ---
 
-Welcome to my github website.
-I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, cloud networks, and anything related to uncovering and interpreting the topology of the Internet.
+Welcome to my website.
+I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, Internet data science, cloud networks, network security.
 I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
@@ -11,8 +11,83 @@ I can be reached at amarderATcaidaDOTorg.
 - [Other Recorded Presentation](#other-recorded-presentations)
 
 # Research
+## Learning Regexes to Extract Network Names from Hostnames [AINTEC 2021]
+Authors: Matthew Luckie, **Alexander Marder**, Bradley Huffaker, kc claffy
+
+Operators often provide DNS hostnames for network interconnection addresses that indicate the interconnecting networks.
+We used machine learning to extract network names from the hostnames, and map the names to autonomous system numbers (ASNs).
+
+<details>
+<summary><b>Abstract</b></summary>
+
+We present the design, implementation, evaluation, and validation of a system that automatically learns regular expressions (regexes) to extract network names from Internet hostnames assigned by operators using their own conventions.
+Our fully automated method does not rely on a human to provide a starting regex, labeled examples of valid extractions, or a dictionary of network names.
+Our method first learns the dictionary of network names, and then automatically generates and evaluates regexes that extract these names.
+We validate our dictionary against ground truth, finding that 97.3% of the names our regexes extract are valid names for the networks.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[Paper Website](https://catalog.caida.org/details/paper/2021_learning_regexes_extract_network_names)
+[AINTEC 2021 Paper](data/aintec21/learning_regexes_extract_network_names.pdf)
+</details>
+
+## Learning to Extract Geographic Information from Internet Router Hostnames [CoNEXT 2021]
+Authors: Matthew Luckie, Bradley Huffaker, **Alexander Marder**, Zachary Bischof, Marianne Fletcher, kc claffy
+
+DNS hostnames associated with router IP addresses often contain a code indicating the geographic locations of the router.
+We devised a machine learning technique to extract and interpret the code.
+<details>
+<summary><b>Abstract</b></summary>
+
+Geolocating Internet routers is a long-standing and notoriously difficult challenge, and current solutions lack the accuracy and adaptability to yield reliable results.
+We revisit this problem, designing a solution capable of accurately and comprehensively extracting geographic information that network operators embed into router interface hostnames.
+We train our system using dictionaries that map geographic codes to known locations, and constrain inferences with delay measurements conducted from a distributed set of vantage points.
+While most operators use known geographic codes, some devise their own mnemonic codes for locations, which our system also extracts and interprets.
+
+We evaluate our system on Internet-wide topology datasets, automatically learning regular expressions (regexes) for 1023 different domain suffixes with IPv4 routers, and 241 different domain suffixes with IPv6 routers.
+We received ground truth from operators of 13 domain suffixes, all of whom confirmed the correctness of our learned regexes, and that our system correctly interpreted 78.6% of the custom geographic codes.
+For these 13 suffixes, our solution more accurately extracts and interprets geographic information than the previous state-of-the-art, correctly geolocating 94.0% of router hostnames with a geohint compared to DRoP (56.6%) and HLOC (73.1%).
+This work advances the ability of researchers and network operators to characterize the location of critical Internet infrastructure, a foundational building block of network performance, security, and resilience analysis.
+We release the source code of our system and our inferred regexes.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[Paper Website](https://catalog.caida.org/details/paper/2021_learning_extract_geographic_information)
+[CoNEXT 2021 Paper](data/conext21/learning_extract_geographic_information.pdf)
+</details>
+
+## Inferring Regional Access Network Topologies: Methods and Applications [IMC 2021]
+Authors: Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
+
+Mapping access networks in the United States.
+For wireline access networks, the maps help reveal the facility-level structure of each access networks and the  edge facilities that rely on other facilities for Internet connectivity.
+For wireless networks, we revealed geographic regions that rely on the same exit location from the wireless networks.
+We also presented new ways of finding measurement vantage points in wireline and wireless networks.
+
+<details>
+<summary><b>Abstract</b></summary>
+
+Using a toolbox of Internet cartography methods, and new ways of applying them, we have undertaken a comprehensive active measurement-driven study of the topology of U.S. regional access ISPs.
+We used state-of-the-art approaches in various combinations to accommodate the geographic scope, scale, and architectural richness of U.S. regional access ISPs.
+In addition to vantage points from research platforms, we used public WiFi hotspots and public transit of mobile devices to acquire the visibility needed to thoroughly map access networks across regions.
+We observed many different approaches to aggregation and redundancy, across links, nodes, buildings, and at different levels of the hierarchy.
+One result is substantial disparity in latency from some Edge COs to their backbone COs, with implications for end users of cloud services.
+Our methods and results can inform future analysis of critical infrastructure, including resilience to disasters, persistence of the digital divide, and challenges for the future of 5G and edge computing.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[Paper Website](https://catalog.caida.org/details/paper/2021_inferring_regional_access_network_topologies/) <br />
+[IMC 2021 Paper](https://www.caida.org/catalog/papers/2021_inferring_regional_access_network_topologies/inferring_regional_access_network_topologies.pdf) <br />
+</details>
+
 ## Inferring Cloud Interconnections: Validation, Geolocation, and Routing Behavior [PAM 2021]
-**Alexander Marder**, kc claffy, Alex C. Snoeren
+Authors: **Alexander Marder**, kc claffy, Alex C. Snoeren
 
 Early work trying to interpret traceroutes from large public cloud providers with global WANs.
 Intended to start a larger research effort, we improved bdrmapIT's accuracy for traceroute paths from clouds, analyzed differences across geographic regions, and geolocated interconnections between cloud providers.
@@ -31,7 +106,7 @@ Finally, we present two techniques for geolocating the interconnections between 
 <details>
 <summary><b>Resources</b></summary>
 
-Coming soon.
+[PAM 2021 Paper](data/pam21/cloud.pdf)
 </details>
 
 ## Learning to Extract and Use ASNs in Hostnames [IMC 2020]
