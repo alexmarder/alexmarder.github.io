@@ -3,12 +3,20 @@ title: Alex Marder's Website
 ---
 
 Welcome to my website.
-I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, Internet data science, cloud networks, network security.
-I received my PhD at the University of Pennsylvania in 2019.
+I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, Internet data science, cloud networks, and network security.
+I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
-- [Research](#research)
-- [Other Recorded Presentation](#other-recorded-presentations)
+I'm currently on the academic job market.
+My application materials are linked here:
+* [CV](data/app/resume_20211004.pdf)
+* [Research Statement](data/app/statement.pdf)
+* [Teaching Statement](data/app/teachstate.pdf)
+* [Inclusion and Diversity Statement](data/app/divstate.pdf)
+
+Site anchors:
+* [Research](#research)
+* [Other Recorded Presentation](#other-recorded-presentations)
 
 # Research
 ## Learning Regexes to Extract Network Names from Hostnames [AINTEC 2021]
