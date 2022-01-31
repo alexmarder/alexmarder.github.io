@@ -215,7 +215,7 @@ bdrmapIT achieves 91.8%-98.8% accuracy when mapping AS boundaries in two Interne
 <details>
 <summary><b>Resources</b></summary>
 
-[IMC 2018 Paper]((data/bdrmapit/bdrmapit_paper.pdf))<br />
+[IMC 2018 Paper](data/bdrmapit/bdrmapit_paper.pdf)<br />
 [IMC 2018 Slides](data/bdrmapit/bdrmapit_slides.pdf)<br />
 [Github Repository](https://github.com/alexmarder/bdrmapit)
 </details>
