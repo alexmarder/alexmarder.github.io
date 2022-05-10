@@ -7,12 +7,13 @@ I'm currently a research scientist at CAIDA/UCSD focusing on Internet measuremen
 I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
-I'm currently on the academic job market.
-My application materials are linked here:
-* [CV](data/app/resume_20211004.pdf)
-* [Research Statement](data/app/statement.pdf)
-* [Teaching Statement](data/app/teachstate.pdf)
-* [Inclusion and Diversity Statement](data/app/divstate.pdf)
+My academic CV can be found here: [CV](data/app/resume_20211004.pdf)
+
+[//]: # (* [Research Statement]&#40;data/app/statement.pdf&#41;)
+
+[//]: # (* [Teaching Statement]&#40;data/app/teachstate.pdf&#41;)
+
+[//]: # (* [Inclusion and Diversity Statement]&#40;data/app/divstate.pdf&#41;)
 
 Site anchors:
 * [Research](#research)
