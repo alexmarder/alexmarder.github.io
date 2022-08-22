@@ -1,2 +1,5 @@
 theme: jekyll-theme-tactile
 markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES", "UNSAFE"]
+  extensions: ["strikethrough", "autolink", "table"]
