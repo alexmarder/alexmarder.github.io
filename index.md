@@ -1,9 +1,10 @@
 ---
-title: Alex Marder's Website
+title: Alex Marder
 ---
 
-Welcome to my website.
-I'm currently a research scientist at CAIDA/UCSD focusing on Internet measurements, Internet data science, cloud networks, and network security.
+*Still a work in progress*
+
+I'm currently a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
 I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
@@ -19,12 +20,149 @@ Site anchors:
 * [Research](#research)
 * [Other Recorded Presentation](#other-recorded-presentations)
 
-# Research
-## Learning Regexes to Extract Network Names from Hostnames [AINTEC 2021]
-Authors: Matthew Luckie, **Alexander Marder**, Bradley Huffaker, kc claffy
+# Active Research Efforts
+## NSF Convergence Accelerator for 5G, Phase 1
+### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI) - $750,000
+This is one of 16 commercial or university-led projects funded in response to the joint solicitation by NSF and DOD to allow DOD operators to securely communicate with 5G devices in commercial networks.
+Our project synthesizes recent advances in Internet measurement and programmable data planes to automatically send traffic along verified safe paths.
 
-Operators often provide DNS hostnames for network interconnection addresses that indicate the interconnecting networks.
-We used machine learning to extract network names from the hostnames, and map the names to autonomous system numbers (ASNs).
+<details>
+<summary><b>Longer description</b></summary>
+
+5G wireless technology has the potential to transform DOD mission-critical operations, but taking full advantage of this opportunity requires new techniques to operate through commercial networks worldwide.
+Connecting mission-critical devices to commercial 5G networks will transform DOD communications, but it also increases the attack surface for sensitive and critical communications by exposing the traffic to the Internet at large.
+Nation-states have nearly inexhaustible resources to disrupt traffic or passively recognize communications patterns via network infrastructure under their control, and the verified-trust paradigm in a zero-trust architecture cannot prevent these attacks.
+Any secure communication solution in the 5G space must account for adversarial Internet paths that traverse networks and routers that are potentially controlled by adversary nation-states.
+In essence, operating through 5G networks requires not just focusing on the wireless last hop, but also the Internet paths to reach the last hop.
+
+This project combines three components to create an unprecedented ability to leverage commercial 5G networks for secure and resilient communication.
+The first component takes advantage of programmable data planes to facilitate path measurements – and shift communications onto trustworthy paths – without modifying DOD applications, existing network devices, or third-party networks.
+Component 2 creates an automated measurement application that interfaces with the router from Component 1 to identify router-level paths that avoid adversaries, as well as verify in real-time that communication paths for active flows behave as expected.
+Component 3 will recommend ways for DOD to expand the availability of secure communication paths to 5G networks.
+This last component will identify high-value networks whose inclusion in an industry zone-of-trust could benefit DOD, and apply existing geopolitical influence frameworks to evaluate trustworthy communication paths between DOD and geographic regions.
+
+Tackling this problem requires convergence research across six areas of expertise: network measurement for path assessment; 5G communication and transport; programmable switch implementation; realistic evaluation platforms; security constraints of 5G-connected infrastructure; and geopolitical influence and strategy in the cyber domain.
+This interdisciplinary and cross-sector collaboration targets a persistently unsolved challenge that the 5G ecosystem amplifies in importance: automatic selection of communication paths with 5G devices to avoid networks, locations, or hardware potentially controlled by a nation-state adversary.
+This project will provide broad impact by complementing zero-trust architectures and secure 5G implementations, and by offering a transformative approach to how DoD and critical infrastructure can operate through the exploding yet dangerously opaque 5G ecosystem.
+</details>
+
+## NSF CNS Medium: Detection and Analysis of Infrastructure Bottlenecks in a Cloud-Centric Internet
+### Ricky Mok (PI), *Alexander Marder (Co-PI)*, kc claffy (Co-PI)
+The goal of this work is to identify and locate bottlenecks in Internet backbone networks between cloud applications and users in U.S. broadband networks.
+The Internet is undergoing a fundamental shift to cloud-hosted applications, and we intend to measure the extent to which the core Internet infrastructure successfully adapted.
+We hope that our work will shed light on the digital divide tha manifests long before the last-mile.
+
+<details>
+<summary>Longer description</summary>
+
+The CoVID-19 pandemic and associated quarantine has accelerated the Internet’s fundamental shift from a peer-to-peer to a cloud-centric model.
+Our entire lives have moved online, now predominantly mediated by services in the cloud, and public clouds are rapidly evolving to meet increasing requirements and demands from customers and end users.
+The importance of the clouds in the modern Internet triggers questions regarding how well existing Internet backbone networks support the applications and content now served from the clouds.
+Cloud providers can afford the infrastructure upgrades to support the needs of low latency or high throughput applications, but their ability to adapt infrastructure to application demands ends at their network border.
+The economics of deploying and operating transit backbone infrastructure combine with the surge in traffic toward cloud services to induce performance bottlenecks in the changing Internet landscape.
+
+This project proposes an ambitious effort to design measurement and analysis tools that can transform our understanding of cloud connectivity performance and reachability in the U.S. and around the world.
+Researchers currently lack the measurement ability to even identify such bottlenecks at scale, much less assess their impact on Internet users.
+The project is structured as two tasks that will combine to reveal performance bottlenecks outside the cloud networks where the high cost of deployment and operations leads to infrastructure bottlenecks for cloud applications.
+The first task will develop novel techniques to identify performance bottleneck links between cloud datacenters and thousands of publicly accessible speed test servers, by synthesizing active measurements with TCP flows.
+The second task will analyze the bottleneck links we identify with comprehensive path measurements from cloud datacenters to the entire public Internet, and we will develop new techniques to support inference of the geographic locations of bottleneck links by geolocating where paths exit cloud networks.
+
+The intellectual merit of this project stems from the innovative methods we will develop and validate to conduct accurate, scalable, and reliable topology and performance measurements of a critical component of the modern Internet, overcoming cost barriers that have prevented measurement studies from the cloud.
+The measured features and labels the project generates will provide an ideal basis to address the persistent challenge in applying machine learning techniques to network infrastructure research.
+The project will also have broader impacts outside of the scientific research agenda.
+The tools and data the project generates will be valuable to enterprises and application developers deploying into the cloud, as well as policy-makers seeking to understand bottlenecks in U.S. Internet infrastructure.
+The data, tools, and analyses can also lead to the discovery of broadband performance inequities in the U.S. and inform future public investment in infrastructure.
+Experience with cloud applications and measurements will be incorporated into an undergraduate data science course and undergraduate research mentorships.
+</details>
+
+# Prior Research
+## Security and Resilience of U.S. Broadband Internet Access Networks
+On December 25, 2020, a bomb exploded in downtown Nashville, TN that exposed critical weaknesses in U.S. Internet infrastructure deployments.
+The explosion damaged a single network facility, but disconnected an entire Internet access network covering Nashville and Middle Tennessee.
+The outage revealed a single point of failure for the Nashville access network, but state of the art network measurement tools were insufficient to identify other weaknesses in access network infrastructure around the country.
+
+We independently evaluated the resilience and security of the access network infrastructure in the U.S.
+First, we analyzed the resilience of the access network infrastructure to common failure modes, finding that although much of the infrastructure is robust, single points of failure exist throughout the country.
+Second, we examined the potential for intentional attacks against the infrastructure, showing that an attacker can gain sufficient knowledge of the access networks to induce outages in neighborhoods, cities, or entire states without any insider information.
+Finally, we presented our discussions with broadband access network operators to facilitate future research into increasing the resilience and security of these critical networks.
+
+### Papers
+#### Access Denied: Assessing Physical Risks to Internet Access Networks [Usenix Security 2023]
+Authors: **Alexander Marder**, Zesen Zhang, Ricky Mok, Ramakrishna Padmanabhan, Bradley Huffaker, Matthew Luckie, Alberto Dainotti, kc claffy, Alex C. Snoeren, Aaron Schulman
+
+<details>
+<summary><b>Abstract</b></summary>
+
+Regional access networks play an essential role in connecting both wireline and mobile users to the Internet.
+Today’s access networks support 5G cellular phones, cloud services, hospital and financial services, and remote work essential to the modern economy.
+Yet long-standing economic and architectural constraints produce points of limited redundancy that leave these networks exposed to targeted physical attacks resulting in widespread outages.
+This risk was dramatically shown in December 2020, when a bomb destroyed part of AT&T’s regional access network in Nashville, Tennessee disabling 911 emergency dispatch, air traffic control, hospital networks, and credit card processing, among other services.
+
+We combine new techniques for analyzing access-network infrastructure deployments with measurements of large-scale outages to demonstrate the feasibility and quantify potential impacts of targeted attacks.
+Our study yields insights into physical attack surfaces and resiliency limits of regional access networks.
+We analyze potential approaches to mitigate the risks we identify and discuss drawbacks identified by network operators.
+We hope that our empirical evaluation will inform risk assessments and operational practices, as well as motivate further analyses of this critical infrastructure.
+</details>
+
+#### Inferring Regional Access Network Topologies: Methods and Applications [IMC 2021]
+Authors: Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
+
+<details>
+<summary><b>Abstract</b></summary>
+
+Using a toolbox of Internet cartography methods, and new ways of applying them, we have undertaken a comprehensive active measurement-driven study of the topology of U.S. regional access ISPs.
+We used state-of-the-art approaches in various combinations to accommodate the geographic scope, scale, and architectural richness of U.S. regional access ISPs.
+In addition to vantage points from research platforms, we used public WiFi hotspots and public transit of mobile devices to acquire the visibility needed to thoroughly map access networks across regions.
+We observed many different approaches to aggregation and redundancy, across links, nodes, buildings, and at different levels of the hierarchy.
+One result is substantial disparity in latency from some Edge COs to their backbone COs, with implications for end users of cloud services.
+Our methods and results can inform future analysis of critical infrastructure, including resilience to disasters, persistence of the digital divide, and challenges for the future of 5G and edge computing.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[Paper Website](https://catalog.caida.org/details/paper/2021_inferring_regional_access_network_topologies/) <br />
+[IMC 2021 Paper](https://www.caida.org/catalog/papers/2021_inferring_regional_access_network_topologies/inferring_regional_access_network_topologies.pdf) <br />
+</details>
+
+## Interpreting Router Interface Hostnames
+
+[//]: # (The ability to accurately geolocate network infrastructure could unlock new empirical analyses, network management approaches, and facilitate diagnostic efforts, but geolocating network infrastructure in third-party networks remains a stubborn challenge.)
+
+DNS hostnames associated with router interfaces provide a potential goldmine for researchers, network operators, and application developers.
+Until recently, the state of the art was either manual interpretation or inaccurate and incomplete automated interpretation.
+None of the approaches reached the level of scale, recency, or accuracy required to provide reliable information for emirical analyses.
+
+We applied a machine learning framework to create regular expressions capable of extracting two type of information from router interface hostnames.
+First, we applied the framework to the problem of recognizing and interpreting AS numbers and names that operators embed into hostnames to signal interconnection with a neighboring network.
+We trained the model using output from bdrmapIT (discussed below), and extended bdrmapIT to incorporate the output from our model into its inference engine.
+Second, we used the framework to geolocate Internet routers, a much more ambitious effort since operators embed many different types of geographic codes in hostnames and we could not find reliable ground truth for training.
+
+### Papers
+#### Learning to Extract and Use ASNs in Hostnames [IMC 2020]
+Authors: Matthew Luckie, **Alexander Marder**, Marianne Fletcher, Bradley Huffaker, kc claffy
+
+<details>
+<summary><b>Abstract</b></summary>
+
+We present the design, implementation, evaluation, and validation of a system that learns regular expressions (regexes) to extract Autonomous System Numbers (ASNs) from hostnames associated with router interfaces.
+We train our system with ASNs inferred by RouterToAsAssignment and bdrmapIT using topological constraints from traceroute paths, as well as ASNs recorded by operators in PeeringDB, to learn regexes for 206 different suffixes.
+Because these methods for inferring router ownership can infer the wrong ASN, we modify bdrmapIT to integrate this new capability to extract ASNs from hostnames.
+Evaluating against ground truth, our modification correctly distinguished stale from correct hostnames for 92.5% of hostnames with an ASN different from bdrmapIT’s initial inference.
+This modification allowed bdrmapIT to increase the agreement between extracted and inferred ASNs for these routers in the January 2020 ITDK from 87.4% to 97.1% and reduce the error rate from 1/7.9 to 1/34.5.
+This work presents a new avenue for collecting validation data, opening a broader horizon of opportunity for evidence-based router ownership inference.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[Paper website](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/) <br />
+[IMC 2020 Paper](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/learning_extract_use_asns.pdf) <br />
+[IMC 2020 Presentation](https://www.youtube.com/watch?v=SuUoSxsjp9s) <br />
+</details>
+
+#### Learning Regexes to Extract Network Names from Hostnames [AINTEC 2021]
+Authors: Matthew Luckie, **Alexander Marder**, Bradley Huffaker, kc claffy
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -42,11 +180,9 @@ We validate our dictionary against ground truth, finding that 97.3% of the names
 [AINTEC 2021 Paper](data/aintec21/learning_regexes_extract_network_names.pdf)
 </details>
 
-## Learning to Extract Geographic Information from Internet Router Hostnames [CoNEXT 2021]
+#### Learning to Extract Geographic Information from Internet Router Hostnames [CoNEXT 2021]
 Authors: Matthew Luckie, Bradley Huffaker, **Alexander Marder**, Zachary Bischof, Marianne Fletcher, kc claffy
 
-DNS hostnames associated with router IP addresses often contain a code indicating the geographic locations of the router.
-We devised a machine learning technique to extract and interpret the code.
 <details>
 <summary><b>Abstract</b></summary>
 
@@ -67,32 +203,6 @@ We release the source code of our system and our inferred regexes.
 
 [Paper Website](https://catalog.caida.org/details/paper/2021_learning_extract_geographic_information)
 [CoNEXT 2021 Paper](data/conext21/learning_extract_geographic_information.pdf)
-</details>
-
-## Inferring Regional Access Network Topologies: Methods and Applications [IMC 2021]
-Authors: Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
-
-Mapping access networks in the United States.
-For wireline access networks, the maps help reveal the facility-level structure of each access networks and the  edge facilities that rely on other facilities for Internet connectivity.
-For wireless networks, we revealed geographic regions that rely on the same exit location from the wireless networks.
-We also presented new ways of finding measurement vantage points in wireline and wireless networks.
-
-<details>
-<summary><b>Abstract</b></summary>
-
-Using a toolbox of Internet cartography methods, and new ways of applying them, we have undertaken a comprehensive active measurement-driven study of the topology of U.S. regional access ISPs.
-We used state-of-the-art approaches in various combinations to accommodate the geographic scope, scale, and architectural richness of U.S. regional access ISPs.
-In addition to vantage points from research platforms, we used public WiFi hotspots and public transit of mobile devices to acquire the visibility needed to thoroughly map access networks across regions.
-We observed many different approaches to aggregation and redundancy, across links, nodes, buildings, and at different levels of the hierarchy.
-One result is substantial disparity in latency from some Edge COs to their backbone COs, with implications for end users of cloud services.
-Our methods and results can inform future analysis of critical infrastructure, including resilience to disasters, persistence of the digital divide, and challenges for the future of 5G and edge computing.
-</details>
-
-<details>
-<summary><b>Resources</b></summary>
-
-[Paper Website](https://catalog.caida.org/details/paper/2021_inferring_regional_access_network_topologies/) <br />
-[IMC 2021 Paper](https://www.caida.org/catalog/papers/2021_inferring_regional_access_network_topologies/inferring_regional_access_network_topologies.pdf) <br />
 </details>
 
 ## Inferring Cloud Interconnections: Validation, Geolocation, and Routing Behavior [PAM 2021]
@@ -116,32 +226,6 @@ Finally, we present two techniques for geolocating the interconnections between 
 <summary><b>Resources</b></summary>
 
 [PAM 2021 Paper](data/pam21/cloud.pdf)
-</details>
-
-## Learning to Extract and Use ASNs in Hostnames [IMC 2020]
-Authors: Matthew Luckie, **Alexander Marder**, Marianne Fletcher, Bradley Huffaker, kc claffy
-
-One major problem with inferring router operators is the lack of validation information available.
-We used bdrmapIT's inferences as input to a machine learning algorithm to extract AS operator information from DNS hostnames.
-This can provide much greater breadth to router operator validation.
-
-<details>
-<summary><b>Abstract</b></summary>
-
-We present the design, implementation, evaluation, and validation of a system that learns regular expressions (regexes) to extract Autonomous System Numbers (ASNs) from hostnames associated with router interfaces.
-We train our system with ASNs inferred by RouterToAsAssignment and bdrmapIT using topological constraints from traceroute paths, as well as ASNs recorded by operators in PeeringDB, to learn regexes for 206 different suffixes.
-Because these methods for inferring router ownership can infer the wrong ASN, we modify bdrmapIT to integrate this new capability to extract ASNs from hostnames.
-Evaluating against ground truth, our modification correctly distinguished stale from correct hostnames for 92.5% of hostnames with an ASN different from bdrmapIT’s initial inference.
-This modification allowed bdrmapIT to increase the agreement between extracted and inferred ASNs for these routers in the January 2020 ITDK from 87.4% to 97.1% and reduce the error rate from 1/7.9 to 1/34.5.
-This work presents a new avenue for collecting validation data, opening a broader horizon of opportunity for evidence-based router ownership inference.
-</details>
-
-<details>
-<summary><b>Resources</b></summary>
-
-[Paper website](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/) <br />
-[IMC 2020 Paper](https://www.caida.org/publications/papers/2020/learning_extract_use_asns/learning_extract_use_asns.pdf) <br />
-[IMC 2020 Presentation](https://www.youtube.com/watch?v=SuUoSxsjp9s) <br />
 </details>
 
 ## Alias Pruning by Path Length Estimation (APPLE) [PAM 2020]
