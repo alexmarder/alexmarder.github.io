@@ -22,12 +22,13 @@ Site anchors:
 
 # Active Research Efforts
 ## NSF Convergence Accelerator for 5G, Phase 1
-### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI) - $750,000
+### 5G Traffic Sovereignty: Operating Through an Adversarial Internet
+#### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI) - $750,000
 This is one of 16 commercial or university-led projects funded in response to the joint solicitation by NSF and DOD to allow DOD operators to securely communicate with 5G devices in commercial networks.
 Our project synthesizes recent advances in Internet measurement and programmable data planes to automatically send traffic along verified safe paths.
 
 <details>
-<summary><b>Longer description</b></summary>
+<summary><b>Public abstract</b></summary>
 
 5G wireless technology has the potential to transform DOD mission-critical operations, but taking full advantage of this opportunity requires new techniques to operate through commercial networks worldwide.
 Connecting mission-critical devices to commercial 5G networks will transform DOD communications, but it also increases the attack surface for sensitive and critical communications by exposing the traffic to the Internet at large.
@@ -46,15 +47,13 @@ This interdisciplinary and cross-sector collaboration targets a persistently uns
 This project will provide broad impact by complementing zero-trust architectures and secure 5G implementations, and by offering a transformative approach to how DoD and critical infrastructure can operate through the exploding yet dangerously opaque 5G ecosystem.
 </details>
 
-## NSF CNS Medium: Detection and Analysis of Infrastructure Bottlenecks in a Cloud-Centric Internet
-### Ricky Mok (PI), *Alexander Marder (Co-PI)*, kc claffy (Co-PI)
-The goal of this work is to identify and locate bottlenecks in Internet backbone networks between cloud applications and users in U.S. broadband networks.
-The Internet is undergoing a fundamental shift to cloud-hosted applications, and we intend to measure the extent to which the core Internet infrastructure successfully adapted.
-We hope that our work will shed light on the digital divide tha manifests long before the last-mile.
+## Analyzing the Performance of the Cloud-Centric Internet
+The shift to running user-facing applications in the public cloud providers requires us to similarly shift measurement focus to the cloud networks.
+But, the cloud also provides the unprecedented opportunity to colocate our measurement infrastructure in the same data centers and networks as popular applications.
+These project address our current shortcomings in empirical measurements and take advantage of the enormous opportunity that public cloud afford performance analyses.
 
-<details>
-<summary>Longer description</summary>
-
+### NSF CNS Medium: Detection and Analysis of Infrastructure Bottlenecks in a Cloud-Centric Internet
+#### Ricky Mok (PI), *Alexander Marder (Co-PI)*, kc claffy (Co-PI)
 The CoVID-19 pandemic and associated quarantine has accelerated the Internet’s fundamental shift from a peer-to-peer to a cloud-centric model.
 Our entire lives have moved online, now predominantly mediated by services in the cloud, and public clouds are rapidly evolving to meet increasing requirements and demands from customers and end users.
 The importance of the clouds in the modern Internet triggers questions regarding how well existing Internet backbone networks support the applications and content now served from the clouds.
@@ -73,7 +72,24 @@ The project will also have broader impacts outside of the scientific research ag
 The tools and data the project generates will be valuable to enterprises and application developers deploying into the cloud, as well as policy-makers seeking to understand bottlenecks in U.S. Internet infrastructure.
 The data, tools, and analyses can also lead to the discovery of broadband performance inequities in the U.S. and inform future public investment in infrastructure.
 Experience with cloud applications and measurements will be incorporated into an undergraduate data science course and undergraduate research mentorships.
-</details>
+
+### NSF CRII: Measurement Capabilities for the Modern Internet
+#### *Alexander Marder* (PI)
+The growing deployment of low-latency and high-throughput applications, the upfront and maintenance costs of computing resources, and constantly evolving security threats make it increasingly complex and costly for organizations to host services and applications themselves.
+Public cloud providers, like Amazon AWS, Microsoft Azure, and Google Cloud Platform (GCP), ease that burden by allowing organizations to build and scale their applications on networks and hardware managed by the cloud provider.
+As applications shifted into the clouds, the Internet fundamentally changed from peer-to-peer to a cloud-centric model.
+
+The importance of the clouds in the modern Internet necessitates understanding the paths between cloud applications and users to better inform public policy and network operations, and we propose an ambitious effort to directly observe and interpret these cloud application paths at the router level.
+We will not attempt to guess the paths that clouds use to reach end-hosts; instead, we will observe the router paths used by public cloud wide area networks (WANs) through comprehensive probing from our virtual machines (VMs).
+By extending our recent techniques to cloud networks, we can create maps containing the paths from each cloud region to every corner of the Internet, along with the network operator for every observed router IP address.
+These maps can provide edge network operators with the paths that clouds use to reach their networks, helping them diagnose problems, plan network improvements, and choose primary or backup providers.
+In the future, we plan to leverage the annotated topology maps that we generate to conduct thirdparty analysis of cloudWANs, such as detecting the location of congestion or packet loss between clouds and users.
+
+We will also use the map of the topology visible from our cloud VMs to interpret paths observed in the reverse direction, from end-hosts to the cloud.
+Identifying the router operators in an individual path measurement from an arbitrary end-host is notoriously difficult due to the lack of information to constrain inference, but fitting these paths to our preprocessed map can provide the constraints needed for interpretation.
+Our partial solution to this decades-old problem will allow network operators to understand their paths to cloud applications, and is of particular importance when comprehensive probing is impractical, such as from mobile devices.
+
+
 
 # Prior Research
 ## Security and Resilience of U.S. Broadband Internet Access Networks
