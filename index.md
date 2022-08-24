@@ -20,15 +20,15 @@ Site anchors:
 * [Research](#research)
 * [Other Recorded Presentation](#other-recorded-presentations)
 
-# Active Research Efforts
-## NSF Convergence Accelerator for 5G, Phase 1
-### 5G Traffic Sovereignty: Operating Through an Adversarial Internet
-#### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI) - $750,000
+# Current Research Efforts
+## NSF Convergence Accelerator 2022 Joint NSF/DOD Phase 1
+### 5G Traffic Sovereignty: Operating Through an Adversarial Internet ($750,000)
+#### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI)
 This is one of 16 commercial or university-led projects funded in response to the joint solicitation by NSF and DOD to allow DOD operators to securely communicate with 5G devices in commercial networks.
 Our project synthesizes recent advances in Internet measurement and programmable data planes to automatically send traffic along verified safe paths.
 
 <details>
-<summary><b>Public abstract</b></summary>
+<summary><b>Project description</b></summary>
 
 5G wireless technology has the potential to transform DOD mission-critical operations, but taking full advantage of this opportunity requires new techniques to operate through commercial networks worldwide.
 Connecting mission-critical devices to commercial 5G networks will transform DOD communications, but it also increases the attack surface for sensitive and critical communications by exposing the traffic to the Internet at large.
@@ -52,8 +52,11 @@ The shift to running user-facing applications in the public cloud providers requ
 But, the cloud also provides the unprecedented opportunity to colocate our measurement infrastructure in the same data centers and networks as popular applications.
 These project address our current shortcomings in empirical measurements and take advantage of the enormous opportunity that public cloud afford performance analyses.
 
-### NSF CNS Medium: Detection and Analysis of Infrastructure Bottlenecks in a Cloud-Centric Internet
+### NSF CNS Medium: Detection and Analysis of Infrastructure Bottlenecks in a Cloud-Centric Internet ($1,200,000)
 #### Ricky Mok (PI), *Alexander Marder (Co-PI)*, kc claffy (Co-PI)
+<details>
+<summary><b>Project description</b></summary>
+
 The CoVID-19 pandemic and associated quarantine has accelerated the Internet’s fundamental shift from a peer-to-peer to a cloud-centric model.
 Our entire lives have moved online, now predominantly mediated by services in the cloud, and public clouds are rapidly evolving to meet increasing requirements and demands from customers and end users.
 The importance of the clouds in the modern Internet triggers questions regarding how well existing Internet backbone networks support the applications and content now served from the clouds.
@@ -72,9 +75,13 @@ The project will also have broader impacts outside of the scientific research ag
 The tools and data the project generates will be valuable to enterprises and application developers deploying into the cloud, as well as policy-makers seeking to understand bottlenecks in U.S. Internet infrastructure.
 The data, tools, and analyses can also lead to the discovery of broadband performance inequities in the U.S. and inform future public investment in infrastructure.
 Experience with cloud applications and measurements will be incorporated into an undergraduate data science course and undergraduate research mentorships.
+</details>
 
-### NSF CRII: Measurement Capabilities for the Modern Internet
+### NSF CRII: Measurement Capabilities for the Modern Internet ($175,000)
 #### *Alexander Marder* (PI)
+<details>
+<summary><b>Project description</b></summary>
+
 The growing deployment of low-latency and high-throughput applications, the upfront and maintenance costs of computing resources, and constantly evolving security threats make it increasingly complex and costly for organizations to host services and applications themselves.
 Public cloud providers, like Amazon AWS, Microsoft Azure, and Google Cloud Platform (GCP), ease that burden by allowing organizations to build and scale their applications on networks and hardware managed by the cloud provider.
 As applications shifted into the clouds, the Internet fundamentally changed from peer-to-peer to a cloud-centric model.
@@ -88,7 +95,31 @@ In the future, we plan to leverage the annotated topology maps that we generate 
 We will also use the map of the topology visible from our cloud VMs to interpret paths observed in the reverse direction, from end-hosts to the cloud.
 Identifying the router operators in an individual path measurement from an arbitrary end-host is notoriously difficult due to the lack of information to constrain inference, but fitting these paths to our preprocessed map can provide the constraints needed for interpretation.
 Our partial solution to this decades-old problem will allow network operators to understand their paths to cloud applications, and is of particular importance when comprehensive probing is impractical, such as from mobile devices.
+</details>
 
+### Papers
+#### Inferring Cloud Interconnections: Validation, Geolocation, and Routing Behavior [PAM 2021]
+**Alexander Marder**, kc claffy, Alex C. Snoeren
+
+Early work trying to interpret traceroutes from large public cloud providers with global WANs.
+Intended to start a larger research effort, we improved bdrmapIT's accuracy for traceroute paths from clouds, analyzed differences across geographic regions, and geolocated interconnections between cloud providers.
+
+<details>
+<summary><b>Abstract</b></summary>
+
+Public clouds fundamentally changed the Internet landscape, centralizing traffic generation in a handful of networks.
+Internet performance, robustness, and public policy analyses struggle to properly reflect this centralization, largely because public collections of BGP and traceroute reveal a small portion of cloud connectivity.
+
+This paper evaluates and improves our ability to infer cloud connectivity, bootstrapping future measurements and analyses that more accurately reflect the cloud-centric Internet.
+We also provide a technique for identifying the interconnections that clouds use to reach destinations around the world, allowing edge networks and enterprises to understand how clouds reach them via their public WAN.
+Finally, we present two techniques for geolocating the interconnections between cloud networks at the city level that can inform assessments of their resilience to link failures and help enterprises build multi-cloud applications and services.
+</details>
+
+<details>
+<summary><b>Resources</b></summary>
+
+[PAM 2021 Paper](data/pam21/cloud.pdf)
+</details>
 
 
 # Prior Research
@@ -104,7 +135,7 @@ Finally, we presented our discussions with broadband access network operators to
 
 ### Papers
 #### Access Denied: Assessing Physical Risks to Internet Access Networks [Usenix Security 2023]
-Authors: **Alexander Marder**, Zesen Zhang, Ricky Mok, Ramakrishna Padmanabhan, Bradley Huffaker, Matthew Luckie, Alberto Dainotti, kc claffy, Alex C. Snoeren, Aaron Schulman
+**Alexander Marder**, Zesen Zhang, Ricky Mok, Ramakrishna Padmanabhan, Bradley Huffaker, Matthew Luckie, Alberto Dainotti, kc claffy, Alex C. Snoeren, Aaron Schulman
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -121,7 +152,7 @@ We hope that our empirical evaluation will inform risk assessments and operation
 </details>
 
 #### Inferring Regional Access Network Topologies: Methods and Applications [IMC 2021]
-Authors: Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
+Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -156,7 +187,7 @@ Second, we used the framework to geolocate Internet routers, a much more ambitio
 
 ### Papers
 #### Learning to Extract and Use ASNs in Hostnames [IMC 2020]
-Authors: Matthew Luckie, **Alexander Marder**, Marianne Fletcher, Bradley Huffaker, kc claffy
+Matthew Luckie, **Alexander Marder**, Marianne Fletcher, Bradley Huffaker, kc claffy
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -178,7 +209,7 @@ This work presents a new avenue for collecting validation data, opening a broade
 </details>
 
 #### Learning Regexes to Extract Network Names from Hostnames [AINTEC 2021]
-Authors: Matthew Luckie, **Alexander Marder**, Bradley Huffaker, kc claffy
+Matthew Luckie, **Alexander Marder**, Bradley Huffaker, kc claffy
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -197,7 +228,7 @@ We validate our dictionary against ground truth, finding that 97.3% of the names
 </details>
 
 #### Learning to Extract Geographic Information from Internet Router Hostnames [CoNEXT 2021]
-Authors: Matthew Luckie, Bradley Huffaker, **Alexander Marder**, Zachary Bischof, Marianne Fletcher, kc claffy
+Matthew Luckie, Bradley Huffaker, **Alexander Marder**, Zachary Bischof, Marianne Fletcher, kc claffy
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -221,34 +252,15 @@ We release the source code of our system and our inferred regexes.
 [CoNEXT 2021 Paper](data/conext21/learning_extract_geographic_information.pdf)
 </details>
 
-## Inferring Cloud Interconnections: Validation, Geolocation, and Routing Behavior [PAM 2021]
-Authors: **Alexander Marder**, kc claffy, Alex C. Snoeren
+## Internet Cartography
+Much of my research focuses on creating accurate and comprehensive maps of the Internet's router-level graph to support other analyses by myself and other researchers, with a special focus on the router-level interconnections between Internet networks.
+The motivation behind this work dates back to peering wars between transit providers and eyball networks (e.g., Level3 and Comcast) and my interest in DDoS attacks against the interconnections.
+Currently, this work supports nearly all of my research efforts.
 
-Early work trying to interpret traceroutes from large public cloud providers with global WANs.
-Intended to start a larger research effort, we improved bdrmapIT's accuracy for traceroute paths from clouds, analyzed differences across geographic regions, and geolocated interconnections between cloud providers.
+### Papers
 
-<details>
-<summary><b>Abstract</b></summary>
-
-Public clouds fundamentally changed the Internet landscape, centralizing traffic generation in a handful of networks.
-Internet performance, robustness, and public policy analyses struggle to properly reflect this centralization, largely because public collections of BGP and traceroute reveal a small portion of cloud connectivity.
-
-This paper evaluates and improves our ability to infer cloud connectivity, bootstrapping future measurements and analyses that more accurately reflect the cloud-centric Internet.
-We also provide a technique for identifying the interconnections that clouds use to reach destinations around the world, allowing edge networks and enterprises to understand how clouds reach them via their public WAN.
-Finally, we present two techniques for geolocating the interconnections between cloud networks at the city level that can inform assessments of their resilience to link failures and help enterprises build multi-cloud applications and services.
-</details>
-
-<details>
-<summary><b>Resources</b></summary>
-
-[PAM 2021 Paper](data/pam21/cloud.pdf)
-</details>
-
-## Alias Pruning by Path Length Estimation (APPLE) [PAM 2020]
-Authors: **Alexander Marder**
-
-APPLE is a new alias resolution technique that uses pings from many vantage points to group together addresses they belong to the same routers.
-This is not the expected final product, but a proof of concept that the technique has merit.
+#### Alias Pruning by Path Length Estimation (APPLE) [PAM 2020]
+**Alexander Marder**
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -272,10 +284,8 @@ We also show that APPLE complements existing alias resolution techniques, increa
 [Github Repository](https://github.com/alexmarder/apple)
 </details>
 
-## vrfinder: Finding Outbound Addresses in Traceroute [SIGMETRICS 2020]
-Authors: **Alexander Marder**, Matthew Luckie, Bradley Huffaker, kc claffy
-
-Finds outbound addresses (usually caused by L3VPNs) in traceroute paths.
+#### vrfinder: Finding Outbound Addresses in Traceroute [SIGMETRICS 2020]
+**Alexander Marder**, Matthew Luckie, Bradley Huffaker, kc claffy
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -295,11 +305,8 @@ We also show the benefit of accounting for L3VPNs in traceroute analysis through
 [SIGMETRICS 2020 Presentation](https://www.youtube.com/watch?v=P9jrEz2trJs)
 </details>
 
-## Pushing the Boundaries with bdrmapIT: Mapping Router Ownership at Internet Scale [IMC 2018]
-Authors: **Alexander Marder**, Matthew Luckie, Amogh Dhamdhere, Bradley Huffaker, kc claffy, Jonathan M. Smith
-
-<tt>bdrmapIT</tt> creates accurate maps of the Internet's graph.
-It uses traceroutes from any number of vantage points and identifies the AS operator for every router interface address seen in the tracroute dataset.
+#### Pushing the Boundaries with bdrmapIT: Mapping Router Ownership at Internet Scale [IMC 2018]
+**Alexander Marder**, Matthew Luckie, Amogh Dhamdhere, Bradley Huffaker, kc claffy, Jonathan M. Smith
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -321,11 +328,8 @@ bdrmapIT achieves 91.8%-98.8% accuracy when mapping AS boundaries in two Interne
 [Github Repository](https://github.com/alexmarder/bdrmapit)
 </details>
 
-## MAP-IT: Multipass Accurate Passive Inferences from Traceroute [IMC 2016]
-Authors: **Alexander Marder**, Jonathan M. Smith
-
-A constant challenge to both researchers and network diagnosticians is identifying AS boundaries in traceroute data.
-We provide the MAP-IT algorithm for doing so that is highly precise and is able to identify most inter-AS links that are revealed through traceroute.
+#### MAP-IT: Multipass Accurate Passive Inferences from Traceroute [IMC 2016]
+**Alexander Marder**, Jonathan M. Smith
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -350,6 +354,12 @@ These results suggest that MAP-IT is sufficiently reliable for network diagnosti
 [IMC 2018 Slides](data/mapit/mapit_imc_slides.pdf)<br />
 [Github Repository](https://github.com/alexmarder/MAP-IT)
 </details>
+
+# Open Source Software
+As part of my research efforts, I often release open-source software that I continue to maintain.
+
+* [bdrmapIT](https://gitlab.com/alexander_marder/bdrmapit) - determines router ownership and identifies router-level interconnections between networks
+* [traceutils2](https://gitlab.com/alexander_marder/traceutils2) - utilities for parsing traceroute output
 
 # Other Recorded Presentations
 EuroIX presentation of preliminary research in to how public clouds (Amazon AWS, Microsoft Azure, and Google Cloud) use IXPs.
