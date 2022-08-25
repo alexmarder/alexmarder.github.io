@@ -31,9 +31,11 @@ My CV can be found here: [CV](data/app/cv_amarder.pdf)
 
 [//]: # (* [Inclusion and Diversity Statement]&#40;data/app/divstate.pdf&#41;)
 
-Site anchors:
-* [Research](#research)
-* [Other Recorded Presentation](#other-recorded-presentations)
+[//]: # (Site anchors:)
+
+[//]: # (* [Research]&#40;#research&#41;)
+
+[//]: # (* [Other Recorded Presentation]&#40;#other-recorded-presentations&#41;)
 
 # Current Research Efforts
 ## NSF Convergence Accelerator 2022 Joint NSF/DOD Phase 1
