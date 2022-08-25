@@ -2,13 +2,28 @@
 title: Alex Marder
 ---
 
-*Still a work in progress*
+[//]: # (*Still a work in progress*)
 
+<img src="assets/alexander_marder.jpg" align="right">
+
+* [Background](#background)
+* [Research Interests](#research-interests)
+* [Current Research](#current-research-efforts)
+* [Prior Research](#prior-research)
+* [Actively Maintained Software](#O)
+
+# Background
 I'm currently a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
 I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
-My academic CV can be found here: [CV](data/app/resume_20211004.pdf)
+My CV can be found here: [CV](data/app/cv_amarder.pdf)
+
+# Research Interests
+* Evaluating and improving the security and resilience of communication networks
+* Using data science to reveal and measure performance characteristics of networks
+* Identifying common failure modes for distributed and replicated applications
+
 
 [//]: # (* [Research Statement]&#40;data/app/statement.pdf&#41;)
 
@@ -119,6 +134,16 @@ Finally, we present two techniques for geolocating the interconnections between 
 <summary><b>Resources</b></summary>
 
 [PAM 2021 Paper](data/pam21/cloud.pdf)
+</details>
+
+### Invited Talk
+EuroIX invited me to present preliminary research into how large public clouds (Amazon AWS, Microsoft Azure, and Google Cloud) use IXPs around the world.
+I provided an overview of how the clouds appear to fit into the peering strategies for the different clouds.
+<details>
+<summary><b>Resources</b></summary>
+
+YouTube Link: [https://www.youtube.com/watch?v=_KMiLnjFrSQ](https://www.youtube.com/watch?v=_KMiLnjFrSQ)<br />
+Video Download: [How Do Clouds Use IXPs?](data/euroix/how_do_clouds_use_ixps.mkv)
 </details>
 
 
@@ -355,17 +380,10 @@ These results suggest that MAP-IT is sufficiently reliable for network diagnosti
 [Github Repository](https://github.com/alexmarder/MAP-IT)
 </details>
 
-# Open Source Software
+# Actively Maintained Software
 As part of my research efforts, I often release open-source software that I continue to maintain.
 
 * [bdrmapIT](https://gitlab.com/alexander_marder/bdrmapit) - determines router ownership and identifies router-level interconnections between networks
 * [traceutils2](https://gitlab.com/alexander_marder/traceutils2) - utilities for parsing traceroute output
-
-# Other Recorded Presentations
-EuroIX presentation of preliminary research in to how public clouds (Amazon AWS, Microsoft Azure, and Google Cloud) use IXPs.
-<details>
-<summary><b>Resources</b></summary>
-
-YouTube Link: [https://www.youtube.com/watch?v=_KMiLnjFrSQ](https://www.youtube.com/watch?v=_KMiLnjFrSQ)<br />
-Video Download: [How Do Clouds Use IXPs?](data/euroix/how_do_clouds_use_ixps.mkv)
-</details>
+* [ip2as](https://github.com/alexmarder/ip2as) - create prefix-to-AS mapping that incorporates BGP announcements, IXP prefixes, RIR delegations, and WHOIS registrations
+* [cloudtrace](https://gitlab.com/alexander_marder/cloudtrace/) - modified traceroute that reduces noise in the output caused by path changes
