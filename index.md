@@ -19,6 +19,11 @@ I can be reached at amarderATcaidaDOTorg.
 
 My CV can be found here: [CV](data/app/cv_amarder.pdf)
 
+# News
+* August 2022 - NSF medium ($1,200,000) awarded to [bottlenecks in the cloud-centric Internet](#nsf-cns-medium-detection-and-analysis-of-infrastructure-bottlenecks-in-a-cloud-centric-internet-1200000)
+* July 2022 - Paper accepted to [USENIX Security 2023!](#access-denied-assessing-physical-risks-to-internet-access-networks-usenix-security-2023)
+* June 2022 - NSF/DOD convergence accelerator awarded [securely operating through 5G networks](#nsf-convergence-accelerator-2022-joint-nsfdod-phase-1)
+
 # Research Interests
 * Evaluating and improving the security and resilience of communication networks
 * Using data science to reveal and measure performance characteristics of networks
