@@ -184,6 +184,12 @@ We analyze potential approaches to mitigate the risks we identify and discuss dr
 We hope that our empirical evaluation will inform risk assessments and operational practices, as well as motivate further analyses of this critical infrastructure.
 </details>
 
+<details>
+<summary><b>Resources</b></summary>
+
+[USENIX Security 2023 Paper](data/usenixsec23/outagesec.pdf) <br />
+</details>
+
 #### Inferring Regional Access Network Topologies: Methods and Applications [IMC 2021]
 Zesen Zhang, **Alexander Marder**, Ricky Mok, Bradley Huffaker, Matthew Luckie, kc claffy, Aaron Schulman
 
@@ -202,7 +208,7 @@ Our methods and results can inform future analysis of critical infrastructure, i
 <summary><b>Resources</b></summary>
 
 [Paper Website](https://catalog.caida.org/details/paper/2021_inferring_regional_access_network_topologies/) <br />
-[IMC 2021 Paper](https://www.caida.org/catalog/papers/2021_inferring_regional_access_network_topologies/inferring_regional_access_network_topologies.pdf) <br />
+[IMC 2021 Paper](data/imc21/inferring_regional_access_network_topologies.pdf) <br />
 </details>
 
 ## Interpreting Router Interface Hostnames
