@@ -23,12 +23,15 @@ I'm currently a research scientist at CAIDA/UCSD focusing on analyzing and impro
 I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
 I can be reached at amarderATcaidaDOTorg.
 
-My CV can be found here: [CV](data/app/cv_amarder.pdf)
+My CV can be found here: [CV](data/app/amarder_cv.pdf)
 
 # Research Interests
-* Evaluating and improving the security and resilience of communication networks
-* Using data science to reveal and measure performance characteristics of networks
-* Identifying common failure modes for distributed and replicated applications
+My research uses empirical analyses to improve the security, resilience, and performance of networked
+systems. I bring a unique skill set to network analysis and design, with a deep understanding of Internet
+topology, creative approaches to gathering data, and extensive experience measuring network properties.
+My data-driven approach naturally applies to a wide breadth of problems, including securing 5G
+communication against adversary nation-states, revealing physical resilience and security weaknesses in
+critical networks, and detecting performance bottlenecks that lead to broadband inequities.
 
 
 [//]: # (* [Research Statement]&#40;data/app/statement.pdf&#41;)
