@@ -14,16 +14,18 @@ title: Alex Marder
 * [Actively Maintained Software](#actively-maintained-software)
 
 # News
+* July 2023 - Starting as assistant professor of computer science at Johns Hopkins University.
 * August 2022 - NSF medium ($1,200,000) awarded to [bottlenecks in the cloud-centric Internet](#nsf-cns-medium-detection-and-analysis-of-infrastructure-bottlenecks-in-a-cloud-centric-internet-1200000)
 * July 2022 - Paper accepted to [USENIX Security 2023!](#access-denied-assessing-physical-risks-to-internet-access-networks-usenix-security-2023)
 * June 2022 - NSF/DOD convergence accelerator ($750,000) awarded [securely operating through 5G networks](#nsf-convergence-accelerator-2022-joint-nsfdod-phase-1)
 
 # Background
-I'm currently a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
-I completed a postdoc at CAIDA/UCSD in 2020 and I received my PhD at the University of Pennsylvania in 2019.
-I can be reached at amarderATcaidaDOTorg.
+I'm currently an assistant professor of computer science at Johns Hopkins University.
+Previously, I was a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
+Before that, I was a postdoc at CAIDA/UCSD in 2020 and received my PhD at the University of Pennsylvania in 2019.
 
-My CV can be found here: [CV](data/app/amarder_cv.pdf)
+My CV can be found here: [CV](data/app/amarder_cv.pdf)<br />
+I can be reached at amarderATjhu.edu.
 
 # Research Interests
 My research uses empirical analyses to improve the security, resilience, and performance of networked
