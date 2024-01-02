@@ -4,7 +4,7 @@ title: Alex Marder
 
 [//]: # (*Still a work in progress*)
 
-<img src="assets/alexander_marder.jpg" align="right">
+<img src="assets/images/france-us01.JPG" width="300" align="right">
 
 * [News](#news)
 * [Background](#background)
@@ -14,26 +14,27 @@ title: Alex Marder
 * [Actively Maintained Software](#actively-maintained-software)
 
 # News
-* July 2023 - Starting as assistant professor of computer science at Johns Hopkins University.
-* August 2022 - NSF medium ($1,200,000) awarded to [bottlenecks in the cloud-centric Internet](#nsf-cns-medium-detection-and-analysis-of-infrastructure-bottlenecks-in-a-cloud-centric-internet-1200000)
-* July 2022 - Paper accepted to [USENIX Security 2023!](#access-denied-assessing-physical-risks-to-internet-access-networks-usenix-security-2023)
-* June 2022 - NSF/DOD convergence accelerator ($750,000) awarded [securely operating through 5G networks](#nsf-convergence-accelerator-2022-joint-nsfdod-phase-1)
+* December 2023 - Invited talk at [IEEE 5G Workshop on First Responder and Tactical Networks](https://futurenetworks.ieee.org/conferences/2023-first-responder-and-tactical-networks-workshop)
+* December 2023 - Invited panelist at the [2023 French-American Cyber Security Conference](https://frenchamerican.org/initiatives/cyber-security/)
+* November 2023 - 2 papers accepted to Internet Measurement Conference (IMC)
+* September 2023 - NSF/DOD convergence accelerator for 5G ($5,000,000) awarded
+
+[//]: # (* July 2022 - Paper accepted to [USENIX Security 2023!]&#40;#access-denied-assessing-physical-risks-to-internet-access-networks-usenix-security-2023&#41;)
+
+[//]: # (* June 2022 - NSF/DOD convergence accelerator &#40;$750,000&#41; awarded [securely operating through 5G networks]&#40;#nsf-convergence-accelerator-2022-joint-nsfdod-phase-1&#41;)
 
 # Background
 I'm currently an assistant professor of computer science at Johns Hopkins University.
 Previously, I was a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
 Before that, I was a postdoc at CAIDA/UCSD in 2020 and received my PhD at the University of Pennsylvania in 2019.
 
-My CV can be found here: [CV](data/app/amarder_cv.pdf)<br />
+My CV can be found here: [CV](data/app/amarder_cv_20240102.pdf)<br />
 I can be reached at amarderATjhu.edu.
 
 # Research Interests
-My research uses empirical analyses to improve the security, resilience, and performance of networked
-systems. I bring a unique skill set to network analysis and design, with a deep understanding of Internet
-topology, creative approaches to gathering data, and extensive experience measuring network properties.
-My data-driven approach naturally applies to a wide breadth of problems, including securing 5G
-communication against adversary nation-states, revealing physical resilience and security weaknesses in
-critical networks, and detecting performance bottlenecks that lead to broadband inequities.
+My research uses empirical analyses to improve the security, resilience, and performance of networked systems.
+I bring a unique skill set to network analysis and design, with a deep understanding of Internet topology, creative approaches to gathering data, and extensive experience measuring network properties.
+My data-driven approach naturally applies to a wide breadth of problems, including securing 5G communication against adversary nation-states, revealing physical resilience and security weaknesses in critical networks, and detecting performance bottlenecks that lead to broadband inequities.
 
 
 [//]: # (* [Research Statement]&#40;data/app/statement.pdf&#41;)
@@ -49,6 +50,12 @@ critical networks, and detecting performance bottlenecks that lead to broadband 
 [//]: # (* [Other Recorded Presentation]&#40;#other-recorded-presentations&#41;)
 
 # Current Research Efforts
+## NSF Convergence Accelerator Joint NSF/DOD Phase 2
+### AVOID 5G: Automatic Verification Of Internet Data-paths for 5G ($5,000,000)
+#### *Alexander Marder (PI)*, kc claffy, Ricky Mok, Kyle Jamieson, Erik Kline
+We were one of 5 teams chosen to continue our work in Phase 2.
+This project is a collaboration between Johns Hopkins, UCSD/CAIDA, Princeton, and USC ISI.
+
 ## NSF Convergence Accelerator 2022 Joint NSF/DOD Phase 1
 ### 5G Traffic Sovereignty: Operating Through an Adversarial Internet ($750,000)
 #### *Alexander Marder (PI)*, Ricky Mok (Co-PI), kc claffy (Co-PI)
