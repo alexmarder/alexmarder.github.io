@@ -13,22 +13,22 @@ title: Alex Marder
 * [Prior Research](#prior-research)
 * [Actively Maintained Software](#actively-maintained-software)
 
-# News
-* December 2023 - Invited talk at [IEEE 5G Workshop on First Responder and Tactical Networks](https://futurenetworks.ieee.org/conferences/2023-first-responder-and-tactical-networks-workshop)
-* December 2023 - Invited panelist at the [2023 French-American Cyber Security Conference](https://frenchamerican.org/initiatives/cyber-security/)
-* November 2023 - 2 papers accepted to Internet Measurement Conference (IMC)
-* September 2023 - NSF/DOD convergence accelerator for 5G ($5,000,000) awarded
+[//]: # (# News)
 
-[//]: # (* July 2022 - Paper accepted to [USENIX Security 2023!]&#40;#access-denied-assessing-physical-risks-to-internet-access-networks-usenix-security-2023&#41;)
+[//]: # (* December 2023 - Invited talk at [IEEE 5G Workshop on First Responder and Tactical Networks]&#40;https://futurenetworks.ieee.org/conferences/2023-first-responder-and-tactical-networks-workshop&#41;)
 
-[//]: # (* June 2022 - NSF/DOD convergence accelerator &#40;$750,000&#41; awarded [securely operating through 5G networks]&#40;#nsf-convergence-accelerator-2022-joint-nsfdod-phase-1&#41;)
+[//]: # (* December 2023 - Invited panelist at the [2023 French-American Cyber Security Conference]&#40;https://frenchamerican.org/initiatives/cyber-security/&#41;)
+
+[//]: # (* November 2023 - 2 papers accepted to Internet Measurement Conference &#40;IMC&#41;)
+
+[//]: # (* September 2023 - NSF/DOD convergence accelerator for 5G &#40;$5,000,000&#41; awarded)
 
 # Background
 I'm currently an assistant professor of computer science at Johns Hopkins University.
 Previously, I was a research scientist at CAIDA/UCSD focusing on analyzing and improving the security, resiliency, and performance of the Internet through empirical measurements.
 Before that, I was a postdoc at CAIDA/UCSD in 2020 and received my PhD at the University of Pennsylvania in 2019.
 
-My CV can be found here: [CV](data/app/amarder_cv_20240102.pdf)<br />
+My CV can be found here: [CV](data/app/amarder_cv_20241119.pdf)<br />
 I can be reached at amarderATjhu.edu.
 
 # Research Interests
